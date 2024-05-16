@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import DddHeader from "@/components/Common/Header/DddHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}><div>layout</div>{children}</body>
+    <html lang="zh-cn">
+      <body className={inter.className}>
+        <DddHeader></DddHeader>
+        {children}
+      </body>
     </html>
   );
 }
