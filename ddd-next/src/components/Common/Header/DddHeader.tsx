@@ -1,54 +1,7 @@
+import Image from "next/image"
 import HeaderItem from "./HeaderItem"
+import { leftEntryList, rightEntryList } from "./enrtyList"
 export default function DddHeader() {
-  const leftEntryList = [
-    {
-      title: 'logo'
-    },
-    {
-      title: '番剧'
-    },
-    {
-      title: '直播'
-    },
-    {
-      title: '游戏中心'
-    },
-    {
-      title: '会员购'
-    },
-    {
-      title: '漫画'
-    },
-    {
-      title: '赛事'
-    },
-    {
-      title: 'msi'
-    },
-    {
-      title: '下载客户端'
-    },
-  ]
-  const rightEntryList = [
-    {
-      title: '大会员'
-    },
-    {
-      title: '消息'
-    },
-    {
-      title: '动态'
-    },
-    {
-      title: '收藏'
-    },
-    {
-      title: '历史'
-    },
-    {
-      title: '创作中心'
-    },
-  ]
   return (
     <div className="w-100 h-16 flex px-6 items-center">
       <div className="flex justify-start flex-1" >
@@ -56,7 +9,18 @@ export default function DddHeader() {
       </div>
       <div className="w-96"></div>
       <div className="flex flex-1 justify-end">
-        {rightEntryList.map((item, index) => (<HeaderItem key={index + 'right-entry'}>{item.title}</HeaderItem>))}
+        {rightEntryList.map((item, index) => {
+          return (<HeaderItem key={index + 'right-entry'}>
+            <Image
+              src={item.icon} // 确保这里的路径正确
+              width={20} // 根据实际需要设置
+              height={20} // 根据实际需要设置
+              alt={item.title} // 为图像提供替代文本
+            />
+            {item.title}
+          </HeaderItem>)
+        })}
+
       </div>
     </div>
   )
