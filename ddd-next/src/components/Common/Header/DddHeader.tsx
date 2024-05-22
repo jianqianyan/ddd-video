@@ -1,6 +1,7 @@
 import Image from "next/image"
 import HeaderItem from "./HeaderItem"
 import { leftEntryList, rightEntryList } from "./enrtyList"
+import SubmissionButton from "./SubmissionButton"
 export default function DddHeader() {
   return (
     <div className="w-100 h-16 flex px-6 items-center min-w-[1100px]">
@@ -12,17 +13,12 @@ export default function DddHeader() {
         {rightEntryList.map((item, index) => {
           return (
             <HeaderItem key={index + 'right-entry'} className="flex flex-col justify-center items-center ml-4">
-              <Image
-                src={item.icon}
-                width={20}
-                height={20}
-                alt={item.title}
-              />
+              <item.icon />
               {item.title}
             </HeaderItem>
           )
         })}
-        <button>投稿</button>
+        <SubmissionButton />
       </div>
     </div>
   )

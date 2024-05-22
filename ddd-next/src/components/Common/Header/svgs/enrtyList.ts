@@ -1,10 +1,3 @@
-import BigMemberIcon from './svgs/bigMember.svg'
-import MessageIcon from './svgs/message.svg'
-import DynamicIcon from './svgs/dynamic.svg'
-import CollectionIcon from './svgs/collection.svg'
-import HistoryIcon from './svgs/histroy.svg'
-import IdeaIcon from './svgs/idea.svg'
-
 const leftEntryList = [
   {
     title: 'logo'
@@ -37,27 +30,27 @@ const leftEntryList = [
 const rightEntryList = [
   {
     title: '大会员',
-    icon: BigMemberIcon
+    icon: '/bigMember.svg'
   },
   {
     title: '消息',
-    icon: MessageIcon
+    icon: '/message.svg'
   },
   {
     title: '动态',
-    icon: DynamicIcon
+    icon: '/dynamic.svg'
   },
   {
     title: '收藏',
-    icon: CollectionIcon
+    icon: '/collection.svg'
   },
   {
     title: '历史',
-    icon: HistoryIcon
+    icon: '/histroy.svg'
   },
   {
     title: '创作中心',
-    icon: IdeaIcon
+    icon: '/idea.svg'
   },
 ]
 
