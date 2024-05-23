@@ -1,0 +1,85 @@
+.submission-button {
+  background: #fb7299;
+  color: #fff;
+  height: 34px;
+  width: 90px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'PingFang SC', HarmonyOS_Medium, 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.submission-button:hover {
+  background: #fc8bab;
+}
+
+.update-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.popover-box {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 16px 0 0 0;
+  transition: .3s all ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.popover-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popover-content {
+  position: relative;
+  background-color: var(--bg1_float);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  border: 1px solid var(--line_regular);
+  color: var(--text1);
+}
+
+.popover-content-innner {
+  display: flex;
+  padding: 8px 10px;
+  width: 330px;
+}
+
+.upload-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 62px;
+  height: 63px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 63px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.upload-item:hover {
+  background-color: var(--graph_bg_thick);
+}
+
+.item-icon {
+  margin-bottom: 6px;
+  font-size: 26px;
+  color: var(--text2);
+}
+
+.item-title {
+  color: var(--text2);
+  font-size: 12px;
+  line-height: 17px;
+}

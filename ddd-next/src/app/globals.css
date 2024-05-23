@@ -6,6 +6,24 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --Ga1_s: #F1F2F3;
+  --Ga11: #FFFFFF;
+  --Ga2: #E3E5E7;
+  --Ga7: #61666D;
+  --Ga10: #18191C;
+
+
+  --bg1_float: var(--Ga11);
+  --line_regular: var(--Ga2);
+
+
+  --text1: var(--Ga10);
+  --text2: var(--Ga7);
+
+  --graph_bg_regular: var(--Ga1_s);
+  
+  --graph_bg_thick: var(--Ga2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,4 +39,69 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif;
+  font-weight: 400;
+  overflow-x: auto;
+  background-color: var(--graph_bg_regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25
 }
