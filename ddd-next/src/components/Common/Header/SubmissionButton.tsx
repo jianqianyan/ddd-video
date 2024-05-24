@@ -1,6 +1,6 @@
 'use client'
 import UpdateIcon from './svgs/update.svg'
-import './style.css'
+import './submissionStyle.css'
 import React, { useState, useRef, useEffect } from 'react'
 import { submissionList } from './submissionList'
 

@@ -22,7 +22,7 @@
   --text2: var(--Ga7);
 
   --graph_bg_regular: var(--Ga1_s);
-  
+
   --graph_bg_thick: var(--Ga2);
 }
 
@@ -95,7 +95,8 @@ tfoot,
 thead,
 tr,
 th,
-td {
+td,
+span {
   margin: 0;
   padding: 0;
   border: 0;
