@@ -3,6 +3,7 @@ import HeaderItem from './HeaderItem'
 import { leftEntryList, rightEntryList } from './enrtyList'
 import SubmissionButton from './SubmissionButton'
 import './headerStyles.css'
+import UserHeader from './UserHeader'
 export default function DddHeader() {
   return (
     <div className='ddd-header'>
@@ -18,6 +19,7 @@ export default function DddHeader() {
       </div>
       <div className='max-w-96'></div>
       <div className='flex flex-1 justify-end'>
+        <UserHeader></UserHeader>
         {rightEntryList.map((item, index) => {
           return (
             <HeaderItem
