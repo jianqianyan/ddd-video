@@ -10,7 +10,7 @@ export default function ImagePage() {
   const timer = useRef<NodeJS.Timeout | null>(null)
 
   const handleMouseEnter = () => {
-    if (timer) {
+    if (timer.current) {
       clearTimeout(timer.current)
     }
     setIsPopoverVisible(true)
@@ -38,16 +38,31 @@ export default function ImagePage() {
   }, [isHovered])
 
   return (
-    <div>
-      <Image
-        className='avatar-img'
-        src='/defaultAvatar.jpg'
-        alt='头像'
-        width={38}
-        height={38}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      />
+    <div
+      className={`header-avatar ${
+        isHovered ? 'mini-avatar--large' : 'mini-avatar--small'
+      }`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <a className='header-entry-mini'>
+        <Image
+          className='avatar-img'
+          src='/defaultAvatar.jpg'
+          alt='头像'
+          width={38}
+          height={38}
+        />
+      </a>
+      <a className='header-entry-avatar'>
+        <Image
+          className='avatar-img'
+          src='/defaultAvatar.jpg'
+          alt='头像'
+          width={82}
+          height={82}
+        />
+      </a>
     </div>
   )
 }
